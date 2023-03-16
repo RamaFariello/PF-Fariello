@@ -16,6 +16,9 @@
 #header{
     grid-area: header;
 }
+.navbar-toggler{
+    color: white;
+}
 .navbar{
     background: rgb(0,0,0);
 background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(34,34,34,1) 50%, rgba(0,0,0,1) 100%);
@@ -204,9 +207,7 @@ and (max-device-width: 768px){
     #footer{
         justify-content: center;
     }
-    .navbar_container{
-    padding: 10px;
-    }
+    
     .main_section{
     height: 90vh;
     }

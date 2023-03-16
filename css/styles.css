@@ -3,6 +3,10 @@
   grid-area: header;
 }
 
+.navbar-toggler {
+  color: white;
+}
+
 .navbar {
   background: rgb(0, 0, 0);
   background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(34, 34, 34) 50%, rgb(0, 0, 0) 100%);
@@ -198,9 +202,6 @@ li {
 @media only screen and (max-device-width: 425px) {
   #footer {
     justify-content: center;
-  }
-  .navbar_container {
-    padding: 10px;
   }
   .main_section {
     height: 90vh;
