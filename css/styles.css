@@ -3,10 +3,6 @@
   grid-area: header;
 }
 
-.navbar-toggler {
-  color: white;
-}
-
 .navbar {
   background: rgb(0, 0, 0);
   background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(34, 34, 34) 50%, rgb(0, 0, 0) 100%);
@@ -28,6 +24,10 @@
 .navbar li:hover {
   background-color: rgb(51, 51, 51);
   border-radius: 8px;
+}
+
+.colorbtn {
+  background-color: whitesmoke;
 }
 
 #main {
@@ -120,6 +120,15 @@ a {
   text-decoration: none;
 }
 
+.section_masinfo {
+  height: 70vh;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(0, 2, 5) 0%, rgb(7, 7, 48) 100%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .footer, .contacto, .sitemap_container {
   height: 100%;
   width: 50%;
@@ -151,12 +160,14 @@ a {
   padding: 3px;
 }
 
-li {
-  text-decoration: none;
-  list-style: none;
-  margin: 10px;
-  font-style: oblique;
-  font-weight: bold;
+.card-title {
+  color: white;
+}
+
+.card-text {
+  font-size: 17px;
+  color: whitesmoke;
+  text-align: start;
 }
 
 .p_footer {
@@ -169,6 +180,14 @@ li {
   text-align: center;
 }
 
+li {
+  text-decoration: none;
+  list-style: none;
+  margin: 10px;
+  font-style: oblique;
+  font-weight: bold;
+}
+
 /* ———– Laptops ———– */
 @media only screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
   .img_medio {
@@ -177,6 +196,9 @@ li {
 }
 /* ———– Tablets ———– */
 @media only screen and (max-device-width: 1024px) {
+  .navbar .nav-item {
+    margin-left: 0;
+  }
   .img_medio {
     margin: 27px 0 0 0;
   }
@@ -197,6 +219,9 @@ li {
   }
   .texto2 {
     font-size: 1rem;
+  }
+  .section_masinfo {
+    display: none;
   }
 }
 @media only screen and (max-device-width: 425px) {
@@ -236,6 +261,12 @@ li {
   }
 }
 @media only screen and (max-device-width: 375px) {
+  #main {
+    margin-top: 170px;
+  }
+  .img_medio {
+    margin-top: 10px;
+  }
   .tex2 {
     display: none;
   }
@@ -733,7 +764,7 @@ h2 {
 /* sobre mi */
 @media only screen and (max-device-width: 425px) {
   #main_sobremi {
-    height: 230vh;
+    height: 190vh;
   }
   .main_section_sobremi {
     display: none;
@@ -747,8 +778,8 @@ h2 {
   .article_hobby {
     display: none;
   }
-  li {
-    margin: 9px;
+  li.li_footer {
+    margin: 0;
   }
   .cards {
     margin: 0;
@@ -799,6 +830,9 @@ h2 {
   .maps {
     display: none;
   }
+  .card2 {
+    width: 400px;
+  }
 }
 @media only screen and (max-device-width: 390px) {
   #main_sobremi {
@@ -824,10 +858,13 @@ h2 {
   .p_hobby {
     font-size: 16px;
   }
+  .card2 {
+    width: 370px;
+  }
 }
 @media only screen and (max-device-width: 375px) {
   #main_sobremi {
-    height: 390vh;
+    height: 290vh;
   }
   .h1_sobremi {
     font-size: 18px;
@@ -844,11 +881,14 @@ h2 {
   }
   .p_hobby {
     font-size: 16px;
+  }
+  .card2 {
+    width: 350px;
   }
 }
 @media only screen and (max-device-width: 325px) {
   #main_sobremi {
-    height: 390vh;
+    height: 250vh;
   }
   .h1_sobremi {
     font-size: 18px;
@@ -865,6 +905,38 @@ h2 {
   }
   .p_hobby {
     font-size: 16px;
+  }
+  .card2 {
+    width: 300px;
+  }
+}
+#main_contacto {
+  height: 70vh;
+  margin-top: 130px;
+  background: rgb(2, 0, 29);
+  background: linear-gradient(90deg, rgb(2, 0, 29) 0%, rgb(10, 10, 48) 50%, rgb(9, 9, 28) 100%);
+}
+
+.formulario_container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.formulario {
+  background-color: rgb(13, 13, 71);
+  width: 400px;
+  padding: 10px;
+  margin-top: 50px;
+}
+
+label {
+  color: white;
+}
+
+@media only screen and (max-device-width: 1024px) {
+  .formulario {
+    margin-top: 70px;
   }
 }
 

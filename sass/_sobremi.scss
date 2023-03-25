@@ -213,7 +213,7 @@ and (max-device-width: 768px){
     /* sobre mi */
         @media only screen and (max-device-width: 425px){
             #main_sobremi{
-                height: 230vh;
+                height: 190vh;
             }
             .main_section_sobremi{
                 display: none;
@@ -227,8 +227,8 @@ and (max-device-width: 768px){
             .article_hobby{
                 display: none;
             }
-            li{
-                margin: 9px ;
+            li.li_footer{
+                margin: 0;
             }
             .cards{
                 margin: 0;
@@ -279,6 +279,9 @@ and (max-device-width: 768px){
                 .maps{
                 display: none;
                 }
+                .card2{
+                    width: 400px;
+                }
             }
         @media only screen and (max-device-width: 390px){
                 #main_sobremi{
@@ -304,10 +307,13 @@ and (max-device-width: 768px){
                 .p_hobby{
                     font-size: 16px;
                 }
+                .card2{
+                    width: 370px;
+                }
             }
     @media only screen and (max-device-width: 375px){
         #main_sobremi{
-            height: 390vh;
+            height: 290vh;
         }
         .h1_sobremi{
             font-size: 18px;
@@ -324,11 +330,14 @@ and (max-device-width: 768px){
             }
         .p_hobby{
             font-size: 16px;
+        }
+        .card2{
+            width: 350px;
         }
     }
     @media only screen and (max-device-width: 325px){
         #main_sobremi{
-            height: 390vh;
+            height: 250vh;
         }
         .h1_sobremi{
             font-size: 18px;
@@ -345,6 +354,9 @@ and (max-device-width: 768px){
             }
         .p_hobby{
             font-size: 16px;
+        }
+        .card2{
+            width: 300px;
         }
     }
 

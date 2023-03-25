@@ -16,9 +16,7 @@
 #header{
     grid-area: header;
 }
-.navbar-toggler{
-    color: white;
-}
+
 .navbar{
     background: rgb(0,0,0);
 background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(34,34,34,1) 50%, rgba(0,0,0,1) 100%);
@@ -40,6 +38,10 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(34,34,34,1) 50%, rgba(
         border-radius: 8px;
     }
 }
+.colorbtn{
+    background-color: whitesmoke;
+}
+
             // MAIN
 #main{
     grid-area: main;
@@ -68,6 +70,7 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(34,34,34,1) 50%, rgba(
     height: 240px;
     width: 240px;
     margin-bottom: 10px;
+
 }
             //SECTION2 
 .main_section{
@@ -114,6 +117,15 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(34,34,34,1) 50%, rgba(
 a{
     text-decoration: none;
 }
+// seccion 2
+.section_masinfo{
+    height: 70vh;
+    background: rgb(0,0,0);
+background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,2,5,1) 0%, rgb(7, 7, 48) 100%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
             // FOOTER
 .footer{
     height: 100%;
@@ -143,20 +155,21 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(34,34,34,1) 50%, rgba(
             padding: 3px;
         }
     }
-    li{
-        text-decoration: none;
-        list-style: none;
-        margin: 10px;
-        font-style: oblique;
-        font-weight: bold;
-    }
     .sitemap_container{
         @extend .footer;
     }
     .contacto{
         @extend .footer;
     }
-
+    
+    .card-title {
+        color: white;
+    }
+    .card-text{
+        font-size: 17px;
+        color: whitesmoke;
+        text-align: start;
+    }
 .p_footer{
     width: 550px;
     position: absolute;
@@ -166,7 +179,13 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(34,34,34,1) 50%, rgba(
     font-weight: bold;
     text-align: center;
 }
-
+li{
+    text-decoration: none;
+    list-style: none;
+    margin: 10px;
+    font-style: oblique;
+    font-weight: bold;
+}
 /* ———– Laptops ———– */
 
 @media only screen
@@ -180,6 +199,11 @@ and (max-device-width: 1600px){
 /* ———– Tablets ———– */
 @media only screen
 and (max-device-width: 1024px){
+    .navbar{
+        .nav-item{
+        margin-left: 0;
+        }
+}
     .img_medio{
         margin: 27px 0 0 0 ;
     }
@@ -201,6 +225,9 @@ and (max-device-width: 768px){
     }
     .texto2{
         font-size: 1rem;
+    }
+    .section_masinfo{
+        display: none;
     }
 }
 @media only screen and (max-device-width: 425px){
@@ -242,7 +269,12 @@ and (max-device-width: 768px){
         }
 }
 @media only screen and (max-device-width: 375px){
-        
+        #main{
+            margin-top: 170px;
+        }
+    .img_medio{
+            margin-top: 10px;
+        }
         .tex2{
             display: none;
         }
