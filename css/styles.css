@@ -586,6 +586,7 @@ h2 {
   font-size: 1.4rem;
   color: white;
   margin: 30px;
+  text-align: start;
 }
 
 .media {
@@ -781,6 +782,13 @@ h2 {
   li.li_footer {
     margin: 0;
   }
+  .h1-s {
+    margin-top: 120px;
+    margin-bottom: 0;
+  }
+  h1.h1_sobremi-mb {
+    margin: 10px;
+  }
   .cards {
     margin: 0;
   }
@@ -836,7 +844,7 @@ h2 {
 }
 @media only screen and (max-device-width: 390px) {
   #main_sobremi {
-    height: 390vh;
+    height: 210vh;
   }
   .article_sobremi {
     display: none;
@@ -864,7 +872,7 @@ h2 {
 }
 @media only screen and (max-device-width: 375px) {
   #main_sobremi {
-    height: 290vh;
+    height: 200vh;
   }
   .h1_sobremi {
     font-size: 18px;
@@ -888,7 +896,7 @@ h2 {
 }
 @media only screen and (max-device-width: 325px) {
   #main_sobremi {
-    height: 250vh;
+    height: 230vh;
   }
   .h1_sobremi {
     font-size: 18px;
